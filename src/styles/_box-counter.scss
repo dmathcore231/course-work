@@ -1,0 +1,23 @@
+.box-counter {
+  display: flex;
+  background: #95E1D3;
+  justify-content: center;
+
+  &__item {
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 77px 55.5px 77px 55.5px;
+    border-right: 1px solid #fff;
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.688rem;
+    color: #FFFFFF;
+  }
+
+  &__item_left_border {
+    border-left: 1px solid #fff;
+  }
+}

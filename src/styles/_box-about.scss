@@ -1,0 +1,10 @@
+.box-about {
+  display: flex;
+  flex-direction: column;
+  padding: var(--main-padding-box);
+  gap: 3.063rem;
+
+  &__promo {
+    padding-bottom: 2.125rem;
+  }
+}

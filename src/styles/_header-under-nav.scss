@@ -1,0 +1,35 @@
+.header-under-nav {
+  position: relative;
+  z-index: 2;
+}
+
+.header-under-nav-menu {
+  display: flex;
+  justify-content: space-between;
+
+
+  &__link {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 43px;
+  }
+
+  &__link span {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  &__link:hover {
+    text-shadow: 1px 1px 20px #F38281;
+    border-top: 4px solid #F38281;
+  }
+
+  &__item {
+    padding: 21.5px 150px 21.5px 0px;
+    border-top: 4px solid #fff;
+  }
+}

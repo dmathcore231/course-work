@@ -1,0 +1,32 @@
+.btn__item {
+  --btn-color: #fff;
+  --btn-bg-color: transparent;
+  --btn-border-color: #fff;
+  position: relative;
+  z-index: 2;
+  color: var(--btn-color);
+  border: 4px solid var(--btn-border-color);
+  background-color: var(--btn-bg-color);
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  padding: 22px 104px 22px 104px;
+
+  &:hover {
+    --btn-bg-color: #fff;
+    --btn-color: #E4BE8D;
+  }
+
+  &:active {
+    --btn-border-color: #E4BE8D;
+  }
+
+  &:focus-visible {
+    border: 3px solid #95E1D3;
+    border-radius: 8px;
+    outline: none;
+  }
+}
