@@ -1,4 +1,13 @@
 .posttitle {
   font-size: 1.125rem;
   line-height: 1.313rem;
+  color: #000000;
+
+  &_color {
+    color: var(--main-text-color);
+  }
+
+  &_text_left {
+    text-align: left;
+  }
 }

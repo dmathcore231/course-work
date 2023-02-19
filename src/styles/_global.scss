@@ -10,11 +10,30 @@
   padding: 0;
   margin: 0;
   --main-padding-box: 2.625rem 0 2.625rem 0;
+  --main-text-color: #2D3033;
+  scroll-behavior: smooth;
 
   :focus-visible {
     border: 3px solid #95E1D3;
     border-radius: 8px;
     outline: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 60px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #95E1D3;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #74cab7;
   }
 }
 
