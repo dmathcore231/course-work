@@ -5,6 +5,8 @@
   &__item {
     display: flex;
     position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   &__title {
@@ -50,5 +52,25 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  &__item:hover .gallery__title_row {
+    flex-direction: row;
+    gap: 1px;
+  }
+
+  &__link {
+    color: #F38281;
+    background: #F9EFCF;
+    min-height: 42px;
+    min-width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link:hover {
+    color: #fff;
+    background: #F38281;
   }
 }
