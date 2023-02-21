@@ -43,15 +43,14 @@
   }
 
   &__item:hover .gallery__title {
-    display: flex;
+    @include flex-column;
     justify-content: center;
-    flex-direction: column;
+
   }
 
   &__item:hover .gallery__title-bg {
-    display: flex;
+    @include flex-column;
     justify-content: center;
-    flex-direction: column;
   }
 
   &__item:hover .gallery__title_row {
@@ -64,9 +63,7 @@
     background: #F9EFCF;
     min-height: 42px;
     min-width: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
   }
 
   &__link:hover {

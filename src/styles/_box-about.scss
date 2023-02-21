@@ -1,6 +1,5 @@
 .box-about {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   padding: var(--main-padding-box);
   gap: 3.063rem;
 

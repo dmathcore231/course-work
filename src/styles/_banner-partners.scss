@@ -1,16 +1,7 @@
 .banner-partners {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 82px;
-  background: #F8F8F8;
-  padding: var(--main-padding-box);
-
   &__item {
     width: 127px;
     height: 127px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
   }
 }

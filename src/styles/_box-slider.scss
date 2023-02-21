@@ -1,17 +1,18 @@
 .box-slider {
   background: #F8F8F8;
+
+  &_bg-color_white {
+    background: #fff;
+  }
 }
 
 .slider {
-  display: flex;
+  @include flex-center;
   gap: 30px;
-  justify-content: center;
   padding: var(--main-padding-box);
-  align-items: center;
 
   &__text {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: space-around;
     max-width: 770px;
   }

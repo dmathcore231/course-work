@@ -1,0 +1,53 @@
+.box-reviews {
+  padding: var(--main-padding-box);
+  background: url(/src/images/design-box-bg.png);
+  position: relative;
+  z-index: 1;
+
+  @include bg;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    @include flex-column;
+    gap: 42px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 42px;
+    column-gap: 70px;
+  }
+
+  &__col {
+    display: flex;
+    gap: 50px;
+    width: calc(50% - 35px)
+  }
+
+  &__description {
+    @include flex-column;
+    align-items: start;
+    gap: 32px;
+    max-width: 67%;
+  }
+
+  &__wrapper {
+    @include flex-column;
+    align-items: start;
+    gap: 10px;
+  }
+}

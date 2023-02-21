@@ -3,9 +3,8 @@
 }
 
 .counter {
-  display: flex;
+  @include flex-center;
   background: #95E1D3;
-  justify-content: center;
 
   &__item {
     color: #fff;
