@@ -24,8 +24,7 @@
     color: var(--color-gold);
   }
 
-  &__wrapper {
-    display: flex;
-    gap: 40px;
+  &__item-img {
+    padding: 0 30px 1px 0;
   }
 }
