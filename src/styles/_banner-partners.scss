@@ -1,7 +1,9 @@
 .banner-partners {
   &__item {
-    width: 127px;
-    height: 127px;
+    max-width: 127px;
+    max-height: 127px;
     @include flex-center;
+    width: calc(16% - 80px);
   }
+
 }

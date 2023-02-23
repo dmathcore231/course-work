@@ -1,6 +1,6 @@
 .banner {
-  @include flex-center;
-  gap: 82px;
+  display: flex;
+  justify-content: space-evenly;
   background: #F8F8F8;
   padding: var(--main-padding-box);
 }
