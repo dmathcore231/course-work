@@ -10,12 +10,12 @@
   }
 
   &__title {
-    display: none;
+    opacity: 0;
     position: absolute;
-    left: -16px;
-    bottom: 16px;
-    right: 16px;
-    top: -16px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
     background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
     font-weight: 500;
     font-size: 1.5rem;
@@ -25,10 +25,32 @@
     z-index: 2;
     align-items: center;
     gap: 1.775rem;
+
+    &:hover {
+      animation: bounceInLeft 300ms ease-in-out 1 forwards;
+
+      @keyframes bounceInLeft {
+        0% {
+          opacity: 0;
+          top: 0;
+          right: 0;
+        }
+
+        100% {
+          opacity: 1;
+          left: -16px;
+          bottom: 16px;
+          right: 16px;
+          top: -16px;
+        }
+      }
+      @include flex-column;
+      justify-content: center;
+    }
   }
 
   &__title-bg {
-    display: none;
+    opacity: 0;
     position: absolute;
     left: 0px;
     bottom: 0px;
@@ -42,13 +64,8 @@
     @include img-contain;
   }
 
-  &__item:hover .gallery__title {
-    @include flex-column;
-    justify-content: center;
-
-  }
-
   &__item:hover .gallery__title-bg {
+    opacity: 1;
     @include flex-column;
     justify-content: center;
   }

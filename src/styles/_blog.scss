@@ -1,0 +1,32 @@
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__card {
+    width: calc(33% - 20px);
+    @include flex-column;
+    align-items: flex-start;
+    gap: 33px;
+  }
+
+  &__image-item {
+    @include img-contain;
+  }
+
+  &__text {
+    @include flex-column;
+    gap: 15px;
+  }
+
+  &__icon {
+    display: flex;
+    gap: 45px;
+  }
+
+  &__wrapper-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
