@@ -1,6 +1,7 @@
 .nav-menu {
   display: flex;
   gap: 15px;
+  align-items: center;
 
   &__link {
     font-weight: 600;
@@ -12,8 +13,8 @@
   }
 
   &__link:hover {
-    border-bottom: 1px solid var(--color-gold);
-    color: var(--color-gold);
+    border-bottom: 1px solid var(--orange-300);
+    color: var(--orange-300);
   }
 
   &__link-icon {
@@ -21,7 +22,7 @@
   }
 
   &__link-icon:hover {
-    color: var(--color-gold);
+    color: var(--orange-300);
   }
 
   &__item-img {

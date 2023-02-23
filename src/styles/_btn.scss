@@ -17,15 +17,15 @@
 
   &:hover {
     --btn-bg-color: #fff;
-    --btn-color: #E4BE8D;
+    --btn-color: var(--orange-300);
   }
 
   &:active {
-    --btn-border-color: #E4BE8D;
+    --btn-border-color: var(--orange-300);
   }
 
   &:focus-visible {
-    border: 3px solid #95E1D3;
+    border: 3px solid var(--teal-300);
     border-radius: 8px;
     outline: none;
   }

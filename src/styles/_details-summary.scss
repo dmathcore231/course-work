@@ -9,20 +9,37 @@
 
   &__description {
     text-align: left;
-    color: var(--main-text-color);
+    color: var(--gray-800);
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     padding: 17px 85px 0 22px;
     max-height: 155px;
     overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+      height: 60px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--teal-300);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #74cab7;
+    }
   }
 
   &__text {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-    color: var(--main-text-color);
+    color: var(--gray-800);
     border-bottom: 1px solid #C6CBCD;
     padding: 25px 0 25px 18px;
     justify-content: space-between;

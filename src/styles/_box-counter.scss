@@ -4,7 +4,7 @@
 
 .counter {
   @include flex-center;
-  background: #95E1D3;
+  background: var(--teal-300);
 
   &__item {
     color: #fff;
