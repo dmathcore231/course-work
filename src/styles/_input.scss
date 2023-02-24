@@ -1,0 +1,21 @@
+.input {
+  border: 1px solid #C6CBCD;
+  &::placeholder {
+    color: #C6CBCD;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid #F38281;
+  }
+
+  &_subscribe {
+    border: none;
+    border-bottom: 1px solid #C6CBCD;
+    border-left: 1px solid #C6CBCD;
+    border-top: 1px solid #C6CBCD;
+    width: 100%;
+  }
+}

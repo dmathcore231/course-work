@@ -4,19 +4,23 @@
   justify-content: space-between;
 
   &__card {
-    width: calc(33% - 20px);
+    width: calc(33% - 17px);
     @include flex-column;
     align-items: flex-start;
     gap: 33px;
   }
 
-  &__image-item {
-    @include img-contain;
+  &__link {
+    position: relative;
+
+    &-text {
+      @include flex-column;
+      gap: 15px;
+    }
   }
 
-  &__text {
-    @include flex-column;
-    gap: 15px;
+  &__image-item {
+    @include img-contain;
   }
 
   &__icon {
@@ -28,5 +32,32 @@
     display: flex;
     align-items: center;
     gap: 15px;
+  }
+
+  &__date {
+    position: absolute;
+    bottom: 166%;
+    right: 82%;
+    padding: 10px 22px;
+    @include flex-center;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 80px;
+    max-height: 80px;
+    color: #FFFFFF;
+    background: var(--teal-300);
+
+    &-number {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+
+    &-month {
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
   }
 }
