@@ -37,5 +37,11 @@
     &__item-img {
       padding: 0 30px 1px 0;
     }
+
+    @media (max-width: 1200px) {
+      font-size: 13px;
+      line-height: 15px;
+      padding: 0px 12px 7px 12px;
+    }
   }
 }

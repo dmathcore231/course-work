@@ -6,5 +6,9 @@
     margin: 0 auto;
     max-width: 1190px;
     padding: 0 10px;
+
+    @media (max-width: 1200px) {
+      max-width: 998px;
+    }
   }
 }
