@@ -13,7 +13,7 @@
     font-size:14px;
     line-height: 16px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--light-color);
     padding-top: 42px;
   }
 
@@ -24,11 +24,11 @@
   }
 
   &__link:hover {
-    border-top: 4px solid #F38281;
+    border-top: 4px solid var(--danger-color);
   }
 
   &__item {
     padding: 21px 150px 21px 0px;
-    border-top: 4px solid #fff;
+    border-top: 4px solid var(--light-color);
   }
 }

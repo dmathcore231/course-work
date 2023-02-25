@@ -1,0 +1,47 @@
+.col-under-middle {
+  @include flex-column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 40%;
+  gap: 35px;
+
+  &__item {
+    border: 2px solid var(--light-color);
+    border-radius: 5px;
+    display: flex;
+    gap: 30px;
+    padding: 2px;
+
+    &:hover {
+      border-color: var(--success-color);
+    }
+    &:active {
+      border-color: #5c958a;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &__row {
+    @include flex-column;
+    gap: 19px;
+  }
+
+  &__link {
+    max-height: 105px;
+
+    &:hover {
+      color: var(--danger-color);
+    }
+
+    &:active {
+      color: #f25d5a;
+      text-decoration-color: #f25d5a;
+    }
+  }
+}

@@ -1,10 +1,10 @@
 .seporator {
   height: 4px;
   width: 170px;
-  background-color: #F38281;
+  background-color: var(--danger-color);
 
   &_white {
-    background-color: #fff;
+    background-color: var(--light-color);
   }
 
   &_size_s {

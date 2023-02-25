@@ -1,24 +1,25 @@
 .col-under-left {
   @include flex-column;
-  gap: 26px;
   width: calc(32% - 4px);
+  justify-content: space-between;
 
   &__wrapper {
-    border-bottom: 1px solid #c6cbcd;
+    border-bottom: 1px solid var(--gray-300);
     padding-bottom: 17px;
     @include flex-column;
-    gap: 25px;
+    gap: 39px;
     align-items: flex-start;
 
     &-second {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-bottom: 31px;
     }
   }
 
   &__counter-followers {
-    padding-top: 18px;
+    padding-top: 11px;
     display: flex;
     align-items: flex-end;
   }
@@ -28,7 +29,7 @@
     font-size: 36px;
     line-height: 30px;
     text-transform: uppercase;
-    color: var(--gray-800);
+    color: var(--primary-color);
   }
 
   &__followers-posttitle {
@@ -51,14 +52,14 @@
   }
 
   &__link {
-    color: var(--teal-300);
+    color: var(--success-color);
 
     &:hover {
-      color: #F38281;
+      color: var(--danger-color);
     }
 
     &:active {
-      color: #f26e6c;
+      color: #f25d5a;
     }
   }
 

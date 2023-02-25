@@ -4,23 +4,23 @@
 
 .counter {
   @include flex-center;
-  background: var(--teal-300);
+  background: var(--success-color);
 
   &__item {
-    color: #fff;
+    color: var(--light-color);
     font-size: 1.25rem;
     padding: 76px 55.5px 76px 55.5px;
-    border-right: 1px solid #fff;
+    border-right: 1px solid var(--light-color);
   }
 
   &__number {
     font-weight: 700;
     font-size: 4rem;
     line-height: 4.688rem;
-    color: #FFFFFF;
+    color: var(--light-color);
   }
 
   &__item_left_border {
-    border-left: 1px solid #fff;
+    border-left: 1px solid var(--light-color);
   }
 }

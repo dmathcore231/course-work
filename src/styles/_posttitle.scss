@@ -1,10 +1,10 @@
 .posttitle {
   font-size: 1.125rem;
   line-height: 1.313rem;
-  color: #000000;
+  color: var(--dark-color);
 
-  &_color {
-    color: var(--gray-800);
+  &_primary-color {
+    color: var(--primary-color);
   }
 
   &_text_left {
@@ -15,12 +15,21 @@
     text-transform: uppercase;
   }
 
-  &_gray-500 {
-    color: #C6CBCD;
+  &_text_capitalize {
+    text-transform: capitalize;
+  }
+
+  &_gray-300 {
+    color: var(--gray-300);
   }
 
   &_size_xs {
     font-size: 13px;
     line-height: 15px;
+  }
+
+  &_text_underline {
+    text-decoration-line: underline;
+    text-decoration-color: var(--primary-color);
   }
 }

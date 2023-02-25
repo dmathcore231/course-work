@@ -1,13 +1,13 @@
 $component: 'btn';
 
 .#{$component} {
-  --btn-color: #000000;
+  --btn-color: var(--dark-color)000;
   --btn-bg-color: transparent;
   --btn-border-color: transparent;
-  --btn-color-hover: #000000;
+  --btn-color-hover: var(--dark-color)000;
   --btn-bg-color-hover: transparent;
   --btn-border-color-hover: transparent;
-  --btn-color-activ: #000000;
+  --btn-color-activ: var(--dark-color)000;
   --btn-bg-color-activ: transparent;
   --btn-border-color-activ: transparent;
   --btn-font-size: 18px;
@@ -41,32 +41,32 @@ $component: 'btn';
   &__learn-more {
     position: relative;
     z-index: 2;
-    --btn-color: #fff;
-    --btn-border-color: #fff;
+    --btn-color: var(--light-color);
+    --btn-border-color: var(--light-color);
     --btn-font-size: 24px;
     --btn-line-height: 28px;
     --btn-font-weight: 700;
     --btn-padding: 21px 104px;
-    --btn-color-hover: var(--orange-300);
-    --btn-bg-color-hover: #fff;
-    --btn-border-color-hover: #fff;
-    --btn-color-activ: var(--orange-300);
-    --btn-bg-color-activ: #fff;
-    --btn-border-color-activ: var(--orange-300);
+    --btn-color-hover: var(--secondary-color);
+    --btn-bg-color-hover: var(--light-color);
+    --btn-border-color-hover: var(--light-color);
+    --btn-color-activ: var(--secondary-color);
+    --btn-bg-color-activ: var(--light-color);
+    --btn-border-color-activ: var(--secondary-color);
     border: 4px solid;
   }
 
-  &__sebscribe {
-    --btn-color: #fff;
-    --btn-bg-color: var(--teal-300);
-    --btn-border-color: var(--teal-300);
+  &__subscribe {
+    --btn-color: var(--light-color);
+    --btn-bg-color: var(--success-color);
+    --btn-border-color: var(--success-color);
     --btn-font-size: 18px;
     --btn-line-height: 21px;
     --btn-font-weight: 700;
-    --btn-color-hover: #fff;
+    --btn-color-hover: var(--light-color);
     --btn-bg-color-hover: #87D2C4;
     --btn-border-color-hover: #87D2C4;
-    --btn-color-activ: #fff;
+    --btn-color-activ: var(--light-color);
     --btn-bg-color-activ: #5C958A;
     --btn-border-color-activ: #5C958A;
     --btn-padding: 16px;

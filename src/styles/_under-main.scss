@@ -2,5 +2,6 @@
   padding: var(--main-padding-box);
   &__row {
     display: flex;
+    gap: 31px;
   }
 }

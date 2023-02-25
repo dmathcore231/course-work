@@ -11,7 +11,11 @@
   margin: 0;
   scroll-behavior: smooth;
   --main-padding-box: 2.625rem 0 2.625rem 0;
-  --gray-800: #2D3033;
-  --orange-300 : #F4BF87;
-  --teal-300: #95E1D3;
+  --primary-color: #2D3033;
+  --secondary-color: #F4BF87;
+  --success-color: #95E1D3;
+  --danger-color: #F38281;
+  --light-color: #fff;
+  --dark-color: #000;
+  --gray-300: #C6CBCD;
 }

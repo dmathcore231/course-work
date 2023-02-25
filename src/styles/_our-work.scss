@@ -3,8 +3,40 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, min-content);
   grid-template-areas:
-    'it1 it2 it3 it4'
-    'it5 it6 it3 it7';
+    'item1 item2 item3 item4'
+    'item5 item6 item3 item7';
+
+  &__item_first {
+    grid-area: item1;
+  }
+
+  &__item_second {
+    grid-area: item2;
+  }
+
+  &__item_three {
+    grid-area: item3;
+  }
+
+  &__item_fourth {
+    grid-area: item4;
+  }
+
+  &__item_fifth {
+    grid-area: item5;
+  }
+
+  &__item_sixth {
+    grid-area: item6;
+  }
+
+  &__item_seventh {
+    grid-area: item7;
+  }
+
+  &__image {
+    @include img-cover;
+  }
 
   &__item {
     position: relative;
@@ -23,10 +55,10 @@
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--light-color);
+
     &:hover {
       animation: bounceInLeft-second 300ms ease-in-out 1 forwards;
-
       @keyframes bounceInLeft-second {
         0% {
           opacity: 0;
@@ -38,6 +70,7 @@
           opacity: 1;
         }
       }
+
       @include flex-column;
       justify-content: center;
     }
@@ -49,37 +82,5 @@
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-  }
-
-  &__item_first {
-    grid-area: it1;
-  }
-
-  &__item_second {
-    grid-area: it2;
-  }
-
-  &__item_three {
-    grid-area: it3;
-  }
-
-  &__item_fourth {
-    grid-area: it4;
-  }
-
-  &__item_fifth {
-    grid-area: it5;
-  }
-
-  &__item_sixth {
-    grid-area: it6;
-  }
-
-  &__item_seventh {
-    grid-area: it7;
-  }
-
-  &__image {
-    @include img-cover;
   }
 }

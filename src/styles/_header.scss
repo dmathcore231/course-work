@@ -1,8 +1,7 @@
-.header {
+.header__container {
   background-image: url(/src/images/bg-header.png);
   position: relative;
   @include bg;
-
 
   &::after {
     content: '';

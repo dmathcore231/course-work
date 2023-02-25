@@ -2,13 +2,13 @@
   font-family: 'Kaushan Script';
   font-size: 30px;
   line-height: 44px;
-  color: var(--gray-800);
+  color: var(--primary-color);
 
   &_color_white {
-    color: #fff;
+    color: var(--light-color);
   }
 
-  &_color_black {
-    color: #000;
+  &_dark_color {
+    color: var(--dark-color);
   }
 }

@@ -1,0 +1,35 @@
+.instagram-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: repeat(3, max-content);
+
+  &__item {
+    max-height: 92px;
+
+    &-image {
+      border: 2px solid var(--light-color);
+
+      &:hover {
+        border-color: var(--success-color);
+      }
+
+      &:active {
+        border-color: #5c958a;
+      }
+    }
+  }
+
+  &__posttitle {
+    &:hover {
+      color: var(--danger-color);
+      text-decoration-color: var(--danger-color);
+      transform: scale(1.1);
+    }
+
+    &:active {
+      color: #f25d5a;
+      text-decoration-color: #f25d5a;
+      transform: scale(1.1);
+    }
+  }
+}
