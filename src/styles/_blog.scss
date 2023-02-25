@@ -4,23 +4,40 @@
   justify-content: space-between;
 
   &__card {
-    width: calc(33% - 17px);
+    width: calc(33% - 16px);
     @include flex-column;
     align-items: flex-start;
     gap: 33px;
   }
 
-  &__link {
-    position: relative;
+  &__text {
+    color: inherit;
+  }
 
-    &-text {
-      @include flex-column;
-      gap: 15px;
+  &__link {
+    @include flex-column;
+    gap: 15px;
+    color: var(--primary-color);
+    border: 2px solid var(--light-color);
+    border-radius: 6px;
+
+    &:hover {
+      color: var(--danger-color);
+      border-color: var(--success-color);
+    }
+
+    &:active {
+      color: #f25d5a;
+      border-color: #5c958a;
     }
   }
 
-  &__image-item {
-    @include img-contain;
+  &__image {
+    position: relative;
+
+    &-item {
+      @include img-contain;
+    }
   }
 
   &__icon {
@@ -36,7 +53,7 @@
 
   &__date {
     position: absolute;
-    bottom: 166%;
+    bottom: 10%;
     right: 82%;
     padding: 10px 22px;
     @include flex-center;
