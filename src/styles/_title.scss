@@ -6,7 +6,7 @@
   text-transform: uppercase;
   color: var(--primary-color);
 
-  &_color_white {
+  &_light_color {
     color: var(--light-color);
     max-width: 56.25rem;
   }
@@ -23,7 +23,7 @@
     line-height: 21px;
   }
 
-  &_color_red {
+  &_danger_color {
     color: var(--danger-color);
   }
 
