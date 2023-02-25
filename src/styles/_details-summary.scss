@@ -57,6 +57,7 @@
 
 .details-summary__text::after {
   content: url(/src/images/arrow-close.png);
+  cursor: pointer;
   padding-right: 14px;
 }
 

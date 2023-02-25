@@ -8,7 +8,11 @@
     position: relative;
     z-index: 2;
     padding: 114px 0 0 0;
-    gap: 0rem;
+    gap: 11px;
+  }
+
+  &__title {
+    padding-bottom: 28px;
   }
 }
 

@@ -38,7 +38,7 @@ $component: 'btn';
     border-color: var(--btn-border-color-activ);
   }
 
-  &__learn-more {
+  &_learn-more {
     position: relative;
     z-index: 2;
     --btn-color: var(--light-color);
@@ -56,7 +56,7 @@ $component: 'btn';
     border: 4px solid;
   }
 
-  &__subscribe {
+  &_subscribe {
     --btn-color: var(--light-color);
     --btn-bg-color: var(--success-color);
     --btn-border-color: var(--success-color);
