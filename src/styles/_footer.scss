@@ -1,0 +1,11 @@
+.footer {
+  &__content {
+    padding: 19px 0;
+    border-top: 1px solid var(--gray-300);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+}
