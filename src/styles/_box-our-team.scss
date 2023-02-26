@@ -13,10 +13,19 @@
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
+
+    @media (max-width: 1200px) {
+      padding-top: 14px;
+    }
   }
 
   &__text {
     @include flex-column;
     gap: 30px;
+
+    @media (max-width: 1200px) {
+      gap: 16px;
+    }
   }
 }
+

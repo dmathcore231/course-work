@@ -22,10 +22,18 @@
     @include flex-column;
     align-items: center;
     gap: 23px;
+
+    @media (max-width: 1200px) {
+      gap: 13px;
+    }
   }
 
   &__icon {
-    display: inline-flex;
+
+    @media (max-width: 1200px) {
+      max-width: 28px;
+      max-height: 28px;
+    }
   }
 
   &__link {

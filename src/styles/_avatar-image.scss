@@ -5,6 +5,11 @@
   max-width: 170px;
   overflow: hidden;
 
+  @media (max-width: 1200px) {
+    max-height: 88px;
+    max-width: 88px;
+  }
+
   &__item {
     @include img-contain;
   }

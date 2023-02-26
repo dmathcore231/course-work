@@ -19,12 +19,20 @@
     z-index: 2;
     @include flex-column;
     gap: 42px;
+
+    @media (max-width: 1200px) {
+      gap: 35px;
+    }
   }
 
   &__row {
     display: flex;
     flex-wrap: wrap;
     gap: 66px 50px;
+
+    @media (max-width: 1200px) {
+      gap: 53px 51px;
+    }
   }
 
   &__col {
@@ -38,12 +46,20 @@
     align-items: start;
     gap: 27px;
     max-width: 67%;
+
+    @media (max-width: 1200px) {
+      gap: 15px;
+    }
   }
 
   &__wrapper {
     @include flex-column;
     align-items: start;
     gap: 23px;
+
+    @media (max-width: 1200px) {
+      gap: 6px;
+    }
   }
 
   &__posttitle {

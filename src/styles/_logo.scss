@@ -1,0 +1,10 @@
+.logo {
+
+  &_under {
+
+    @media (max-width: 1200px) {
+      max-width: 95px;
+      max-height: 26px;
+    }
+  }
+}

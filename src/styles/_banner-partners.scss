@@ -4,6 +4,22 @@
     max-height: 127px;
     @include flex-center;
     width: calc(16% - 80px);
+
+    @media (max-width: 1200px) {
+      max-width: 86px;
+      max-height: 86px;
+    }
   }
 
+  &__img {
+    @media (max-width: 1200px) {
+      max-width: 54px;
+      max-height: 54px;
+    }
+
+    &_mini {
+      max-width: 70px;
+      max-height: 70px;
+    }
+  }
 }

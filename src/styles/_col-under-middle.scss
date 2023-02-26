@@ -1,39 +1,24 @@
 .col-under-middle {
   @include flex-column;
   align-items: flex-start;
-  justify-content: space-between;
-  width: 40%;
-  gap: 35px;
+  gap: 38px;
+  padding-top: 36px;
+  width: 39%;
 
-  &__item {
-    border: 2px solid var(--light-color);
-    border-radius: 5px;
-    display: flex;
-    gap: 30px;
-    padding: 2px;
-
-    &:hover {
-      border-color: var(--success-color);
-    }
-    &:active {
-      border-color: #5c958a;
-    }
-  }
-
-  &__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-
-  &__row {
+  &__wrapper {
     @include flex-column;
     gap: 19px;
   }
 
+  &__item {
+    display: flex;
+    gap: 30px;
+  }
+
   &__link {
-    max-height: 105px;
+    display: flex;
+    gap: 30px;
+    color: var(--primary-color);
 
     &:hover {
       color: var(--danger-color);
@@ -42,6 +27,25 @@
     &:active {
       color: #f25d5a;
       text-decoration-color: #f25d5a;
+    }
+  }
+
+  &__image {
+    @media (max-width: 1200px) {
+      max-width: 115px;
+      max-height: 71px;
+    }
+  }
+
+  &__text {
+    @include flex-column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-top: 3px;
+    color: inherit;
+
+    &-item {
+      color: inherit;
     }
   }
 }
