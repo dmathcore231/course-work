@@ -23,8 +23,6 @@
     @include flex-column;
     gap: 15px;
     color: var(--primary-color);
-    border: 2px solid var(--light-color);
-    border-radius: 6px;
 
     @media (max-width: 1200px) {
       gap: 28px;
@@ -32,12 +30,10 @@
 
     &:hover {
       color: var(--danger-color);
-      border-color: var(--success-color);
     }
 
     &:active {
       color: #f25d5a;
-      border-color: #5c958a;
     }
   }
 

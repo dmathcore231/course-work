@@ -76,5 +76,11 @@ $component: 'btn';
     --btn-bg-color-activ: #5C958A;
     --btn-border-color-activ: #5C958A;
     --btn-padding: 16px;
+
+    @media (max-width: 1200px) {
+      --btn-font-size: 14px;
+      --btn-line-height: 16px;
+      --btn-padding: 10px 32px;
+    }
   }
 }

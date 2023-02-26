@@ -1,7 +1,11 @@
 .col-under-left {
   @include flex-column;
-  width: calc(32% - 4px);
+  width: 33%;
   gap: 10px;
+
+  @media (max-width: 1200px) {
+    gap: 3px;
+  }
 
   &_item {
     display: flex;
@@ -9,6 +13,10 @@
     &_first {
       flex-direction: column;
       gap: 19px;
+
+      @media (max-width: 1200px) {
+        gap: 16px;
+      }
     }
 
     &_second {
@@ -23,8 +31,13 @@
 
   &__counter-followers {
     display: flex;
+    align-items: center;
     border-bottom: 1px solid var(--gray-300);
     padding: 23px 0 23px 0;
+
+    @media (max-width: 1200px) {
+      padding: 5px;
+    }
   }
 
   &__followers-title {
@@ -76,7 +89,7 @@
       transform: scale(1.5);
 
       @media (max-width: 1200px) {
-        transform: scale(1.3);
+        transform: scale(1.1);
       }
     }
 
@@ -85,7 +98,7 @@
       transform: scale(1.5);
 
       @media (max-width: 1200px) {
-        transform: scale(1.3);
+        transform: scale(1.1);
       }
     }
   }
@@ -93,5 +106,9 @@
   &__subscribe {
     padding-top: 33px;
     display: flex;
+
+    @media (max-width: 1200px) {
+      padding-top: 24px;
+    }
   }
 }

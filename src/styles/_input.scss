@@ -1,9 +1,15 @@
 .input {
+  display: inline-flex;
   border: 1px solid var(--gray-300);
   &::placeholder {
     color: var(--gray-300);
     font-size: 18px;
     line-height: 21px;
+
+    @media (max-width: 1200px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   &:focus-visible {

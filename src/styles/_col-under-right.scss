@@ -3,4 +3,10 @@
   gap: 35px;
   align-items: flex-start;
   padding-top: 36px;
+  width: 24%;
+
+  @media (max-width: 1200px) {
+    gap: 22px;
+    padding-top: 22px;
+  }
 }

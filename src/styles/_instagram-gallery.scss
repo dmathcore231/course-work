@@ -6,8 +6,16 @@
   &__item {
     max-height: 92px;
 
+    @media (max-width: 1200px) {
+      max-height: 76px;
+    }
+
     &-image {
       border: 2px solid var(--light-color);
+
+      @media (max-width: 1200px) {
+        border: 1px solid var(--light-color);
+      }
 
       &:hover {
         border-color: var(--success-color);
@@ -15,6 +23,11 @@
 
       &:active {
         border-color: #5c958a;
+      }
+
+      @media (max-width: 1200px) {
+        max-width: 78px;
+        max-height: 76px;
       }
     }
   }
