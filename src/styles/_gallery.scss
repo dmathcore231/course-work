@@ -2,11 +2,26 @@
   display: flex;
   gap: 30px;
 
+  @media (max-width: 1200px) {
+    gap: 20px;
+  }
+
   &__item {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  &__icon {
+
+    &-team {
+      @media (max-width: 1200px) {
+        max-width: 31px;
+        max-height: 29px;
+      }
+    }
+
   }
 
   &__title {
@@ -21,6 +36,13 @@
     z-index: 2;
     align-items: center;
     gap: 1.775rem;
+    @include flex-column;
+    justify-content: center;
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
 
     &:hover {
       animation: bounceInLeft 300ms ease-in-out 1 forwards;
@@ -41,9 +63,27 @@
         }
       }
 
-      @include flex-column;
-      justify-content: center;
+      @media (max-width: 1200px) {
+        animation: bounceInLeft 300ms ease-in-out 1 forwards;
+
+        @keyframes bounceInLeft {
+          0% {
+            opacity: 0;
+            top: 0;
+            right: 0;
+          }
+
+          100% {
+            opacity: 1;
+            left: -6px;
+            bottom: 6px;
+            right: 6px;
+            top: -6px;
+          }
+        }
+      }
     }
+
     &:active {
       color: var(--danger-color);
     }
@@ -77,6 +117,11 @@
     min-height: 42px;
     min-width: 42px;
     @include flex-center;
+
+    @media (max-width: 1200px) {
+      min-height: 35px;
+      min-width: 35px;
+    }
   }
 
   &__link:hover {

@@ -5,4 +5,9 @@
   column-gap: 30px;
   row-gap: 148px;
   justify-content: center;
+
+  @media (max-width: 1200px) {
+    padding-top: 68px;
+    row-gap: 72px;
+  }
 }

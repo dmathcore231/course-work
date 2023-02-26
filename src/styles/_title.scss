@@ -6,15 +6,24 @@
   text-transform: uppercase;
   color: var(--primary-color);
 
+  @media (max-width: 1200px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
   &_light_color {
     color: var(--light-color);
-    max-width: 56.25rem;
   }
 
   &_size_s {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
 
   &_size_xs {

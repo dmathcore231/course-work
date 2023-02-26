@@ -3,11 +3,19 @@
   width: 170px;
   background-color: var(--danger-color);
 
+  @media (max-width: 1200px) {
+    width: 148px;
+  }
+
   &_white {
     background-color: var(--light-color);
   }
 
   &_size_s {
     width: 70px;
+
+    @media (max-width: 1200px) {
+      width: 47px;
+    }
   }
 }

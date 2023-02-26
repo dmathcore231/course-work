@@ -2,4 +2,8 @@
   @include flex-column;
   align-items: center;
   gap: 2.5rem;
+
+  @media (max-width: 1200px) {
+    gap: 36px;
+  }
 }

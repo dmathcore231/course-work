@@ -3,6 +3,10 @@
 
   &__gallery {
     padding-top: 95px;
+
+    @media (max-width: 1200px) {
+      padding-top: 83px;
+    }
   }
 
   &__name {

@@ -4,12 +4,22 @@ h1 {
   font-size: 9rem;
   line-height: 11rem;
   text-transform: uppercase;
+
+  @media (max-width: 1200px) {
+    font-size: 96px;
+    line-height: 117px;
+  }
 }
 
 h2 {
   font-family: 'Kaushan Script';
   font-size: 4rem;
   line-height: 5.813rem;
+
+  @media (max-width: 1200px) {
+    font-size: 48px;
+    line-height: 70px;
+  }
 }
 
 h3 {

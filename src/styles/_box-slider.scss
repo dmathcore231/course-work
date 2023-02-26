@@ -5,38 +5,3 @@
     background: var(--light-color);
   }
 }
-
-.slider {
-  @include flex-center;
-  gap: 30px;
-  padding: var(--main-padding-box);
-
-  &__text {
-    @include flex-column;
-    justify-content: space-around;
-    max-width: 770px;
-  }
-
-  &__description {
-    font-size: 24px;
-    line-height: 28px;
-    color: #A9AFB1;
-    text-align: left;
-  }
-
-  &__postdescription {
-    display: flex;
-    align-items: center;
-    gap: 56px;
-  }
-
-  &::after {
-    content: url(/src/images/arrow-right.png);
-    padding-left: 25px;
-  }
-
-  &::before {
-    content: url(/src/images/arrow-left.png);
-    padding-right: 25px;
-  }
-}

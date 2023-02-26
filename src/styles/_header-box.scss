@@ -1,7 +1,10 @@
-
 .header-box {
   &__btn {
     padding: 74px 0 78px 0;
+
+    @media (max-width: 1200px) {
+      padding: 50px 0 73px;
+    }
   }
 
   &__promo {
@@ -9,10 +12,20 @@
     z-index: 2;
     padding: 114px 0 0 0;
     gap: 11px;
+
+    @media (max-width: 1200px) {
+      gap: 6px;
+      padding: 43px 0 0;
+    }
   }
 
   &__title {
+    max-width: 900px;
     padding-bottom: 28px;
+
+    @media (max-width: 1200px) {
+      max-width: 700px;
+      padding-bottom: 25px;
+    }
   }
 }
-

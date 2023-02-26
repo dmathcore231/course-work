@@ -3,6 +3,11 @@
   line-height: 1.313rem;
   color: var(--dark-color);
 
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   &_primary-color {
     color: var(--primary-color);
   }

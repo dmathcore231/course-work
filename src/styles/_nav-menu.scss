@@ -3,6 +3,10 @@
   gap: 28px;
   align-items: center;
 
+  @media (max-width: 1200px) {
+    gap: 22px;
+  }
+
   &__link {
     font-weight: 600;
     font-size: 0.875rem;

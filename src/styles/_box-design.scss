@@ -26,9 +26,27 @@
     position: absolute;
     top: 58%;
     left: 62%;
+
+    &-img {
+      @media (max-width: 1200px) {
+        max-width: 135px;
+        max-height: 279px;
+      }
+    }
   }
 
   &__tablet {
     padding-top: 59px;
+
+    @media (max-width: 1200px) {
+      padding-top: 39px;
+    }
+
+    &-img {
+      @media (max-width: 1200px) {
+        max-width: 446px;
+        max-height: 335px;
+      }
+    }
   }
 }

@@ -54,6 +54,12 @@ $component: 'btn';
     --btn-bg-color-activ: var(--light-color);
     --btn-border-color-activ: var(--secondary-color);
     border: 4px solid;
+
+    @media (max-width: 1200px) {
+      --btn-font-size: 18px;
+      --btn-line-height: 21px;
+      --btn-padding: 13px 97px;
+    }
   }
 
   &_subscribe {
