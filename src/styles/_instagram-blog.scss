@@ -1,0 +1,25 @@
+.instagram-blog {
+  @include flex-column;
+  gap: 35px;
+  align-items: flex-start;
+  padding-top: 36px;
+
+  @media (max-width: 1200px) {
+    gap: 22px;
+    padding-top: 22px;
+  }
+
+  &__posttitle {
+    &:hover {
+      color: var(--danger-color);
+      text-decoration-color: var(--danger-color);
+      transform: scale(1.1);
+    }
+
+    &:active {
+      color: #f25d5a;
+      text-decoration-color: #f25d5a;
+      transform: scale(1.1);
+    }
+  }
+}

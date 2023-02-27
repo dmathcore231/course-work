@@ -1,9 +1,8 @@
-.col-under-middle {
+.blogs {
   @include flex-column;
   align-items: flex-start;
   gap: 38px;
   padding-top: 36px;
-  width: 42%;
 
   @media (max-width: 1200px) {
     gap: 24px;
@@ -19,7 +18,7 @@
     }
   }
 
-  &__item {
+  &__card {
     display: flex;
     gap: 30px;
   }
@@ -43,7 +42,7 @@
     }
   }
 
-  &__image-item {
+  &__image {
     @media (max-width: 1200px) {
       max-width: 115px;
       max-height: 71px;

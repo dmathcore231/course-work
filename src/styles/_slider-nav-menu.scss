@@ -1,16 +1,10 @@
-.header-under-nav {
-  position: relative;
-  z-index: 2;
-}
-
-.header-under-nav-menu {
+.slider-nav-menu {
   display: flex;
   justify-content: space-between;
 
-
   &__link {
     font-weight: 600;
-    font-size:14px;
+    font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
     color: var(--light-color);
@@ -38,7 +32,7 @@
   }
 
   &__item {
-    padding: 21px 150px 21px 0px;
+    padding: 21px 167px 21px 0px;
     border-top: 4px solid var(--light-color);
 
     @media (max-width: 1200px) {

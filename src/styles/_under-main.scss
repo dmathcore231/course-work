@@ -1,7 +1,9 @@
 .under-main {
   padding: var(--main-padding-box);
   &__row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr max-content;
+    grid-template-rows: max-content;
     gap: 30px;
 
     @media (max-width: 1200px) {

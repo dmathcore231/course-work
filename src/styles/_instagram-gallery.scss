@@ -12,6 +12,7 @@
 
     &-image {
       border: 2px solid var(--light-color);
+      @include img-contain;
 
       @media (max-width: 1200px) {
         border: 1px solid var(--light-color);
@@ -29,20 +30,6 @@
         max-width: 78px;
         max-height: 76px;
       }
-    }
-  }
-
-  &__posttitle {
-    &:hover {
-      color: var(--danger-color);
-      text-decoration-color: var(--danger-color);
-      transform: scale(1.1);
-    }
-
-    &:active {
-      color: #f25d5a;
-      text-decoration-color: #f25d5a;
-      transform: scale(1.1);
     }
   }
 }

@@ -1,31 +1,28 @@
-.col-under-left {
+.mogo-subscribe {
   @include flex-column;
-  width: 33%;
   gap: 10px;
 
   @media (max-width: 1200px) {
     gap: 3px;
   }
 
-  &_item {
+  &__wrapper {
     display: flex;
+    flex-direction: column;
+    gap: 19px;
 
-    &_first {
-      flex-direction: column;
-      gap: 19px;
-
-      @media (max-width: 1200px) {
-        gap: 16px;
-      }
+    @media (max-width: 1200px) {
+      gap: 16px;
     }
 
     &_second {
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
     }
   }
 
-  &_logo {
+  &__logo {
     display: flex;
   }
 
@@ -103,7 +100,7 @@
     }
   }
 
-  &__subscribe {
+  &__form {
     padding-top: 33px;
     display: flex;
 
