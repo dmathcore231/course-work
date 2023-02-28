@@ -7,6 +7,18 @@
     gap: 38px;
   }
 
+  @media (max-width: 768px) {
+    @include flex-column;
+    gap: 28px;
+    padding: 28px 16px 28px 16px;
+  }
+
+  &__image {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   &-img {
     @media (max-width: 1200px) {
       max-width: 115px;
@@ -24,6 +36,11 @@
       max-width: 665px;
       gap: 11px;
     }
+
+    @media (max-width: 992px) {
+      max-width: 480px;
+      gap: 11px;
+    }
   }
 
   &__description {
@@ -36,6 +53,11 @@
     @media (max-width: 1200px) {
       font-size: 18px;
       line-height: 21px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 16px;
     }
   }
 
@@ -52,22 +74,34 @@
   &::after {
     content: url(/src/images/arrow-right.png);
     padding-left: 26px;
-    padding-top: 18px;
 
     @media (max-width: 1200px) {
       padding-left: 19px;
-      padding-top: 16px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 
   &::before {
     content: url(/src/images/arrow-left.png);
-    padding-right: 19px;
-    padding-top: 16px;
+    padding-right: 26px;
 
     @media (max-width: 1200px) {
       padding-right: 19px;
-      padding-top: 16px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__dots {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
     }
   }
 }

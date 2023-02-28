@@ -38,7 +38,11 @@
   &__col {
     display: flex;
     gap: 50px;
-    width: calc(50% - 35px)
+    width: calc(50% - 35px);
+
+    @media (max-width: 992px) {
+      gap: 30px;
+    }
   }
 
   &__description {

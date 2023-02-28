@@ -14,13 +14,17 @@
     gap: 19px;
 
     @media (max-width: 1200px) {
-      gap: 10;
+      gap: 10px;
+    }
+
+    @media (max-width:992px) {
+      font-size: 12px;;
+      gap: 5px;
     }
   }
 
   &__card {
     display: flex;
-    gap: 30px;
   }
 
   &__link {
@@ -56,8 +60,17 @@
     padding-top: 3px;
     color: inherit;
 
+    @media (max-width:992px) {
+      font-size: 12px;;
+      gap: 0;
+    }
+
     &-item {
       color: inherit;
+
+      @media (max-width:992px) {
+        font-size: inherit;
+      }
     }
   }
 }

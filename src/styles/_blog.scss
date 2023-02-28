@@ -82,6 +82,15 @@
       gap: 8px;
     }
 
+    @media (max-width: 992px) {
+      right: 81%;
+      padding: 8px 17px;
+    }
+
+    @media (max-width: 810px) {
+      right: 76%;
+    }
+
     &-number {
       font-weight: 700;
       font-size: 36px;

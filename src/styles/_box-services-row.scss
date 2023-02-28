@@ -10,4 +10,9 @@
     padding-top: 68px;
     row-gap: 72px;
   }
+
+  @media (max-width: 768px) {
+    padding-top: 65px;
+    row-gap: 40px;
+  }
 }

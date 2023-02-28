@@ -1,10 +1,17 @@
 .our-work {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, min-content);
   grid-template-areas:
     'item1 item2 item3 item4'
     'item5 item6 item3 item7';
+
+  @media (max-width: 576px) {
+    grid-template-areas:
+      'item1 item3'
+      'item5 item3'
+      'item7 item3'
+      'item4 item2'
+      'item6 item6';
+  }
 
   &__item_first {
     grid-area: item1;
@@ -28,6 +35,10 @@
 
   &__item_sixth {
     grid-area: item6;
+
+    @media (max-width: 576px) {
+      max-height: 152px;
+    }
   }
 
   &__item_seventh {

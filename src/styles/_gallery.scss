@@ -6,15 +6,27 @@
     gap: 20px;
   }
 
+  @media (max-width: 768px) {
+    @include flex-column;
+    align-items: center;
+    gap: 16px;
+  }
+
   &__item {
-    display: flex;
     position: relative;
-    flex-wrap: wrap;
+    @include flex-column;
     justify-content: space-around;
+
+    &_size_xs {
+      @media (max-width: 768px) {
+        max-width: 288px;
+        max-height: 317px;
+        overflow: hidden;
+      }
+    }
   }
 
   &__icon {
-
     &-team {
       @media (max-width: 1200px) {
         max-width: 31px;
@@ -34,14 +46,31 @@
     text-transform: uppercase;
     color: var(--light-color);
     z-index: 2;
-    align-items: center;
-    gap: 1.775rem;
     @include flex-column;
+    align-items: center;
     justify-content: center;
+    gap: 1.775rem;
 
     @media (max-width: 1200px) {
       font-size: 18px;
       line-height: 21px;
+    }
+
+    @media (max-width: 768px) {
+      opacity: 1;
+      top: 250px;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 17px;
+      max-height: 230px;
+    }
+
+    @media (max-width: 380px) {
+      top: 220px;
+    }
+
+    @media (max-width: 350px) {
+      top: 180px;
     }
 
     &:hover {
@@ -82,10 +111,30 @@
           }
         }
       }
+
+      @media (max-width: 768px) {
+        animation: none;
+        color: var(--danger-color);
+
+        &:active {
+          color: #f25d5a;
+        }
+      }
     }
 
     &:active {
       color: var(--danger-color);
+    }
+
+    &_row {
+      flex-direction: row;
+      gap: 1px;
+
+      @media (max-width: 768px) {
+        background: transparent;
+        top: 194px;
+        left: 99px;
+      }
     }
   }
 
@@ -97,21 +146,21 @@
   }
 
   &__image {
-    @include img-contain;
+    @include img-cover;
   }
 
   &__item:hover .gallery__title-bg {
     opacity: 1;
     @include flex-column;
     justify-content: center;
-  }
 
-  &__item:hover .gallery__title_row {
-    flex-direction: row;
-    gap: 1px;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__link {
+    position: relative;
     color: var(--danger-color);
     background: #F9EFCF;
     min-height: 42px;
@@ -122,10 +171,30 @@
       min-height: 35px;
       min-width: 35px;
     }
+
+    @media (max-width: 768px) {
+      min-height: 42px;
+      min-width: 42px;
+    }
   }
 
   &__link:hover {
     color: var(--light-color);
     background: var(--danger-color);
+  }
+
+  &__employee-names {
+    @include flex-column;
+    justify-content: space-around;
+    padding-top: 25px;
+    gap: 30px;
+
+    @media (max-width: 1200px) {
+      padding-top: 14px;
+    }
+  }
+
+  &__wrapper {
+    all: inherit;
   }
 }

@@ -1,37 +1,7 @@
 .box-counter {
   padding: 65px 0 0 0;
-}
 
-.counter {
-  @include flex-center;
-  background: var(--success-color);
-
-  &__item {
-    font-size: 18px;
-    line-height: 21px;
-    color: var(--light-color);
-    padding: 73px 62px;
-    border-right: 1px solid var(--light-color);
-
-    @media (max-width: 1200px) {
-      padding: 39px 43px;
-    }
-  }
-
-  &__number {
-    padding-bottom: 10px;
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 4.688rem;
-    color: var(--light-color);
-
-    @media (max-width: 1200px) {
-      font-size: 48px;
-      line-height: 56px;
-    }
-  }
-
-  &__item_left_border {
-    border-left: 1px solid var(--light-color);
+  @media (max-width: 768px) {
+    padding: 10px 0 0 0;
   }
 }

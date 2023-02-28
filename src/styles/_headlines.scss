@@ -9,6 +9,11 @@ h1 {
     font-size: 96px;
     line-height: 117px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+    line-height: 59px;
+  }
 }
 
 h2 {
@@ -19,6 +24,11 @@ h2 {
   @media (max-width: 1200px) {
     font-size: 48px;
     line-height: 70px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 52px;
   }
 }
 

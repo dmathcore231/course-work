@@ -22,4 +22,8 @@
   @media (max-width: 1200px) {
     --main-padding-box: 28px 0 28px 0;
   }
+
+  @media (max-width: 768px) {
+    --main-padding-box: 40px 0 40px 0;
+  }
 }

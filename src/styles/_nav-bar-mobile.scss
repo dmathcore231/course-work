@@ -1,0 +1,9 @@
+.nav-bar-mobile {
+  display: none;
+  z-index: 2;
+  position: relative;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}

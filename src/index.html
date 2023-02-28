@@ -22,10 +22,13 @@
         <div class="box-header">
           <nav class="nav-bar">
             <div class="logo">
-              <picture>
-                <source media="(max-width: 1200px)" srcset="./images/logo_size_s.png" class="logo-nav-img">
-                <img src="./images/logo.png" alt="logo" class="logo-nav-img">
+              <picture class="logo__img">
+                <source media="(max-width: 1200px)" srcset="./images/logo_size_s.png" class="logo-img">
+                <img src="./images/logo.png" alt="logo" class="logo-img">
               </picture>
+              <div class="logo__img logo__img_xs">
+                <img src="./images/logo_size_xs.png" alt="" class="logo-img">
+              </div>
             </div>
             <div class="nav-bar-navigation">
               <ul class="nav-menu">
@@ -59,6 +62,9 @@
                   </a>
                 </li>
               </ul>
+            </div>
+            <div class="nav-hamburger-menu">
+              <img src="./images/menu.png" alt="" class="nav-hamburger-menu__image">
             </div>
           </nav>
           <div class="promo box-header__promo">
@@ -97,6 +103,14 @@
                 </a>
               </li>
             </ul>
+          </nav>
+          <nav class="nav-bar-mobile">
+            <div class="nav-menu-mobile">
+              <a href="#" class="nav-menu-mobile__link"></a>
+              <a href="#" class="nav-menu-mobile__link"></a>
+              <a href="#" class="nav-menu-mobile__link"></a>
+              <a href="#" class="nav-menu-mobile__link"></a>
+            </div>
           </nav>
         </div>
       </div>
@@ -163,23 +177,23 @@
       </div>
       <div class="box-counter">
         <div class="counter">
-          <div class="counter__item counter__item_left_border">
+          <div class="counter__item counter__item_first counter__item_left_border">
             <div class="counter__number">42</div>
             Lorem ipsum
           </div>
-          <div class="counter__item">
+          <div class="counter__item counter__item_second">
             <div class="counter__number">123</div>
             Lorem ipsum
           </div>
-          <div class="counter__item">
+          <div class="counter__item counter__item_three">
             <div class="counter__number">15</div>
             Lorem ipsum
           </div>
-          <div class="counter__item">
+          <div class="counter__item counter__item_fourth">
             <div class="counter__number">99</div>
             Lorem ipsum
           </div>
-          <div class="counter__item">
+          <div class="counter__item counter__item_fifth">
             <div class="counter__number">24</div>
             Lorem ipsum
           </div>
@@ -314,7 +328,11 @@
           </div>
           <div class="box-what-we-do__content">
             <div class="box-what-we-do__item">
-              <img src="./images/what-we-do-image.png" alt="" class="box-what-we-do-img">
+              <picture>
+                <source media="(max-width: 576px)" srcset="./images/what-we-do-image_size_xs.png"
+                  class="box-what-we-do-img">
+                <img src="./images/what-we-do-image.png" alt="" class="box-what-we-do-img">
+              </picture>
             </div>
             <div class="box-what-we-do__item">
               <div class="details-summary">
@@ -400,8 +418,11 @@
             </div>
             <div class="slider__postdescription">
               <div class="seporator seporator_size_s"></div>
-              <div class="pretitle pretitle_dark_color">Jon Doe</div>
+              <div class="pretitle pretitle_dark_color pretitle_size_xs">Jon Doe</div>
             </div>
+          </div>
+          <div class="slider__dots">
+            <img src="./images/dots.png" alt="" class="slider__icon-dots">
           </div>
         </div>
       </div>
@@ -418,128 +439,135 @@
           </div>
           <div class="box-our-team__gallery">
             <div class="gallery">
-              <div class="gallery__item">
-                <img src="./images/avatar-team-first.png" alt="" class="gallery__image">
-                <div class="gallery__title gallery__title_row">
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="31" width="16" class="gallery__icon-team">
-                      <use href="./images/icons.svg#facebook-icon"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="29" width="36" class="gallery__icon-team">
-                      <use href="./images/icons.svg#twitter-icon"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
-                      <use href="./images/icons.svg#pinterest-icon"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
-                      <use href="./images/icons.svg#insta-icon"></use>
-                    </svg>
-                  </a>
+              <div class="gallery__item gallery__item_size_xs">
+                <div class="gallery__wrapper">
+                  <img src="./images/avatar-team-first.png" alt="" class="gallery__image gallery__image_size_xs">
+                  <div class="gallery__title gallery__title_row">
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="31" width="16" class="gallery__icon-team">
+                        <use href="./images/icons.svg#facebook-icon"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="29" width="36" class="gallery__icon-team">
+                        <use href="./images/icons.svg#twitter-icon"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
+                        <use href="./images/icons.svg#pinterest-icon"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
+                        <use href="./images/icons.svg#insta-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="gallery__employee-names">
+                  <div class="title title_size_s">Kadin Dias</div>
+                  <div class="posttitle posttitle_primary-color posttitle_text_upp">founder, ceo</div>
                 </div>
               </div>
-              <div class="gallery__item">
-                <img src="./images/avatar-team-second.png" alt="" class="gallery__image">
-                <div class="gallery__title gallery__title_row">
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="31" width="16" class="gallery__icon-team">
-                      <use href="./images/icons.svg#facebook-icon"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="29" width="36" class="gallery__icon-team">
-                      <use href="./images/icons.svg#twitter-icon"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
-                      <use href="./images/icons.svg#pinterest-icon"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
-                      <use href="./images/icons.svg#insta-icon"></use>
-                    </svg>
-                  </a>
+              <div class="gallery__item gallery__item_size_xs">
+                <div class="gallery__wrapper">
+                  <img src="./images/avatar-team-second.png" alt="" class="gallery__image gallery__image_size_xs">
+                  <div class="gallery__title gallery__title_row">
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="31" width="16" class="gallery__icon-team">
+                        <use href="./images/icons.svg#facebook-icon"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="29" width="36" class="gallery__icon-team">
+                        <use href="./images/icons.svg#twitter-icon"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
+                        <use href="./images/icons.svg#pinterest-icon"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
+                        <use href="./images/icons.svg#insta-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="gallery__employee-names">
+                  <div class="title title_size_s">Zain Calzoni</div>
+                  <div class="posttitle posttitle_primary-color posttitle_text_upp">designer</div>
                 </div>
               </div>
-              <div class="gallery__item">
-                <img src="./images/avatar-team-three.png" alt="" class="gallery__image">
-                <div class="gallery__title gallery__title_row">
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="31" width="16" class="gallery__icon-team">
-                      <use href="./images/icons.svg#facebook-icon"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="29" width="36" class="gallery__icon-team">
-                      <use href="./images/icons.svg#twitter-icon"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
-                      <use href="./images/icons.svg#pinterest-icon"></use>
-                    </svg>
-                  </a>
-                  <a href="#" class="gallery__link">
-                    <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
-                      <use href="./images/icons.svg#insta-icon"></use>
-                    </svg>
-                  </a>
+              <div class="gallery__item gallery__item_size_xs">
+                <div class="gallery__wrapper">
+                  <img src="./images/avatar-team-three.png" alt="" class="gallery__image gallery__image_size_xs">
+                  <div class="gallery__title gallery__title_row">
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="31" width="16" class="gallery__icon-team">
+                        <use href="./images/icons.svg#facebook-icon"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="29" width="36" class="gallery__icon-team">
+                        <use href="./images/icons.svg#twitter-icon"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
+                        <use href="./images/icons.svg#pinterest-icon"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="gallery__link">
+                      <svg aria-hidden="true" height="34" width="26" class="gallery__icon-team">
+                        <use href="./images/icons.svg#insta-icon"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="gallery__employee-names">
+                  <div class="title title_size_s">Charlie George</div>
+                  <div class="posttitle posttitle_primary-color posttitle_text_upp">photographer</div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="box-our-team__name">
-            <div class="box-our-team__text">
-              <div class="title title_size_s">Kadin Dias</div>
-              <div class="posttitle posttitle_primary-color posttitle_text_upp">founder, ceo</div>
-            </div>
-            <div class="box-our-team__text">
-              <div class="title title_size_s">Zain Calzoni</div>
-              <div class="posttitle posttitle_primary-color posttitle_text_upp">designer</div>
-            </div>
-            <div class="box-our-team__text">
-              <div class="title title_size_s">Charlie George</div>
-              <div class="posttitle posttitle_primary-color posttitle_text_upp">photographer</div>
             </div>
           </div>
         </div>
       </div>
       <div class="banner banner-partners">
-        <div class="banner-partners__item">
-          <img src="./images/logo-partner-first.png" alt="" class="banner-partners__img banner-partners__img_mini">
+        <div class="banner-partners__item banner-partners__item_first">
+          <img src="./images/logo-partner-first.png" alt="" class="banner-partners__img">
         </div>
-        <div class="banner-partners__item">
-          <img src="./images/logo-partner-second.png" alt="" class="banner-partners__img banner-partners__img_mini">
+        <div class="banner-partners__item banner-partners__item_second">
+          <img src="./images/logo-partner-second.png" alt="" class="banner-partners__img">
         </div>
-        <div class="banner-partners__item">
+        <div class="banner-partners__item banner-partners__item_three">
           <img src="./images/logo-partner-three.png" alt="" class="banner-partners__img">
         </div>
-        <div class="banner-partners__item">
+        <div class="banner-partners__item banner-partners__item_fourth">
           <img src="./images/logo-partner-fourth.png" alt="" class="banner-partners__img">
         </div>
-        <div class="banner-partners__item">
+        <div class="banner-partners__item banner-partners__item_fifth">
           <img src="./images/logo-partner-fifth.png" alt="" class="banner-partners__img">
         </div>
-        <div class="banner-partners__item">
-          <img src="./images/logo-partner-sixth.png" alt="" class="banner-partners__img banner-partners__img_mini">
+        <div class="banner-partners__item banner-partners__item_sixth">
+          <img src="./images/logo-partner-sixth.png" alt="" class="banner-partners__img">
         </div>
       </div>
       <div class="box-our-work" id="work">
-        <div class="promo">
-          <div class="pretitle">What we do</div>
-          <div class="title">some of our work</div>
-          <div class="seporator"></div>
-          <div class="posttitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
-            ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum
-            risus feugiat.
+        <div class=" container container_content">
+          <div class="promo">
+            <div class="pretitle">What we do</div>
+            <div class="title">some of our work</div>
+            <div class="seporator"></div>
+            <div class="posttitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
+              ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit
+              fermentum
+              risus feugiat.
+            </div>
           </div>
         </div>
         <div class="our-work">
@@ -661,6 +689,9 @@
                 <div class="pretitle pretitle_dark_color">James Philips</div>
               </div>
             </div>
+            <div class="slider__dots">
+              <img src="./images/dots.png" alt="" class="slider__icon-dots">
+            </div>
           </div>
         </div>
       </div>
@@ -680,7 +711,8 @@
                 <div class="box-reviews__description">
                   <div class="box-reviews__wrapper">
                     <div class="title title_size_s">Phillip Culhane</div>
-                    <div class="box-reviews__undertitle posttitle posttitle_primary-color posttitle_text_upp">photographer
+                    <div class="box-reviews__undertitle posttitle posttitle_primary-color posttitle_text_upp">
+                      photographer
                     </div>
                   </div>
                   <div class="seporator seporator_size_s"></div>
@@ -697,7 +729,8 @@
                 <div class="box-reviews__description">
                   <div class="box-reviews__wrapper">
                     <div class="title title_size_s">Paityn Press</div>
-                    <div class="box-reviews__undertitle posttitle posttitle_primary-color posttitle_text_upp">photographer
+                    <div class="box-reviews__undertitle posttitle posttitle_primary-color posttitle_text_upp">
+                      photographer
                     </div>
                   </div>
                   <div class="seporator seporator_size_s"></div>
@@ -714,7 +747,8 @@
                 <div class="box-reviews__description">
                   <div class="box-reviews__wrapper">
                     <div class="title title_size_s">Dulce Gouse</div>
-                    <div class="box-reviews__undertitle posttitle posttitle_primary-color posttitle_text_upp">photographer
+                    <div class="box-reviews__undertitle posttitle posttitle_primary-color posttitle_text_upp">
+                      photographer
                     </div>
                   </div>
                   <div class="seporator seporator_size_s"></div>
@@ -731,7 +765,8 @@
                 <div class="box-reviews__description">
                   <div class="box-reviews__wrapper">
                     <div class="title title_size_s">Zaire Schleifer</div>
-                    <div class="box-reviews__undertitle posttitle posttitle_primary-color posttitle_text_upp">photographer
+                    <div class="box-reviews__undertitle posttitle posttitle_primary-color posttitle_text_upp">
+                      photographer
                     </div>
                   </div>
                   <div class="seporator seporator_size_s"></div>
@@ -868,9 +903,9 @@
             <div class="mogo-subscribe">
               <div class="mogo-subscribe__wrapper">
                 <div class="mogo-subscribe__logo logo">
-                  <img src="./images/MoGo-under.png" alt="" class="logo_under">
+                  <img src="./images/MoGo-under.png" alt="" class="logo-under">
                 </div>
-                <div class="posttitle posttitle_gray-300 posttitle_text_left">
+                <div class="mogo-subscribe__posttitle posttitle posttitle_gray-300 posttitle_text_left">
                   Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit. Pellentesque quis proin
                   varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.

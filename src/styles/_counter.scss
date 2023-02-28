@@ -1,0 +1,80 @@
+.counter {
+  @include flex-center;
+  background: var(--success-color);
+
+  @media (max-width: 768px) {
+    padding: 0px 16px 0 16px;
+    display: grid;
+    grid-template-areas:
+      'item1 item2'
+      'item3 item4'
+      'item5 item5';
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--light-color);
+    padding: 73px 62px;
+    border-right: 1px solid var(--light-color);
+
+    @media (max-width: 1200px) {
+      padding: 39px 43px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 18px 17px;
+      border-right: none;
+      border-bottom: 1px solid var(--light-color);
+    }
+
+    @media (max-width: 350px) {
+      padding: 18px 10px;
+    }
+
+    &_first {
+      grid-area: item1;
+    }
+
+    &_second {
+      grid-area: item2;
+    }
+
+    &_three {
+      grid-area: item3;
+    }
+
+    &_fourth {
+      grid-area: item4;
+    }
+
+    &_fifth {
+      grid-area: item5;
+
+      @media (max-width: 768px) {
+        border: none;
+      }
+    }
+  }
+
+  &__number {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.688rem;
+    color: var(--light-color);
+
+    @media (max-width: 1200px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  &__item_left_border {
+    border-left: 1px solid var(--light-color);
+
+    @media (max-width: 768px) {
+      border-left: none;
+    }
+  }
+}

@@ -1,27 +1,42 @@
 .banner-partners {
+
+  @media (max-width: 768px) {
+    display: grid;
+    justify-items: center;
+    column-gap: 30px;
+    grid-template-areas:
+      'item1 item2'
+      'item5 item5'
+      'item4 item3'
+      'item6 item6';
+  }
+
   &__item {
-    max-width: 127px;
-    max-height: 127px;
     @include flex-center;
     width: calc(16% - 80px);
 
-    @media (max-width: 1200px) {
-      max-width: 86px;
-      max-height: 86px;
-    }
-  }
-
-  &__img {
-    @media (max-width: 1200px) {
-      max-width: 54px;
-      max-height: 54px;
+    &_first {
+      grid-area: item1;
     }
 
-    &_mini {
-      @media (max-width: 1200px) {
-        max-width: 70px;
-        max-height: 70px;
-      }
+    &_second {
+      grid-area: item2;
+    }
+
+    &_three {
+      grid-area: item3;
+    }
+
+    &_fourth {
+      grid-area: item4;
+    }
+
+    &_fifth {
+      grid-area: item5;
+    }
+
+    &_sixth {
+      grid-area: item6;
     }
   }
 }

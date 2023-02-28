@@ -1,0 +1,13 @@
+.nav-menu-mobile {
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    padding: 21px 28px;
+    border-top: 4px solid #F9EFCF;
+
+    &:hover {
+      border-top: 4px solid var(--danger-color);
+    }
+  }
+}

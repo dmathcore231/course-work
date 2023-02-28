@@ -60,6 +60,10 @@ $component: 'btn';
       --btn-line-height: 21px;
       --btn-padding: 13px 97px;
     }
+
+    @media (max-width: 768px) {
+      --btn-padding: 12px 80px;
+    }
   }
 
   &_subscribe {
@@ -81,6 +85,10 @@ $component: 'btn';
       --btn-font-size: 14px;
       --btn-line-height: 16px;
       --btn-padding: 10px 32px;
+    }
+
+    @media (max-width:992px) {
+      --btn-padding: 10px 15px;
     }
   }
 }

@@ -1,7 +1,26 @@
 .logo {
+  @media (max-width: 768px) {
+    max-height: 56px;
+  }
 
-  &_under {
+  &__img {
+    max-width: 134px;
+    max-height: 56px;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__img_xs {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: inline-flex;
+    }
+  }
+
+  &-under {
     @media (max-width: 1200px) {
       max-width: 182px;
       max-height: 67px;

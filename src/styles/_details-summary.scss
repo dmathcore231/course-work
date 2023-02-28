@@ -21,6 +21,10 @@
       max-height: 138px;
     }
 
+    @media (max-width: 576px) {
+      padding: 7px 70px 0 20px;
+    }
+
     &::-webkit-scrollbar {
       width: 7px;
       height: 60px;
@@ -51,12 +55,21 @@
     @media (max-width: 1200px) {
       padding: 21px 0 21px 16px;
     }
+
+    @media (max-width: 576px) {
+      padding: 17px 0 17px 15px;
+    }
   }
 
   &__title {
     display: flex;
     align-items: center;
     gap: 40px;
+
+    @media (max-width: 576px) {
+      font-size: 14px;
+      gap: 32px;
+    }
   }
 
   &__icon {
@@ -68,11 +81,20 @@
 }
 
 .details-summary__text::after {
-  content: url(/src/images/arrow-close.png);
+  content: url(/src/images/arrow-down.png);
   cursor: pointer;
   padding-right: 14px;
+
+  @media (max-width: 576px) {
+    content: url(/src/images/arrow-down_size_xs.png);
+  }
 }
 
 .details-summary__item[open]>.details-summary__text::after {
-  content: url(/src/images/arrow-open.png);
+  content: url(/src/images/arrow-up.png);
+  padding-right: 8px;
+
+  @media (max-width: 576px) {
+    content: url(/src/images/arrow-up_size_xs.png);
+  }
 }

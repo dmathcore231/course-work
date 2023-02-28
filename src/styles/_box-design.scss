@@ -27,10 +27,20 @@
     top: 58%;
     left: 62%;
 
+    @media (max-width: 576px) {
+      top: 61%;
+      left: 74%;
+    }
+
     &-img {
       @media (max-width: 1200px) {
         max-width: 135px;
         max-height: 279px;
+        @include img-contain;
+      }
+
+      @media (max-width: 576px) {
+       max-width: 100px;
       }
     }
   }
@@ -46,6 +56,7 @@
       @media (max-width: 1200px) {
         max-width: 446px;
         max-height: 335px;
+        @include img-contain;
       }
     }
   }

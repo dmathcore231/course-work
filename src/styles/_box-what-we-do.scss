@@ -9,6 +9,10 @@
     padding: 41px 0 88px 0;
   }
 
+  @media (max-width: 768px) {
+    padding: var(--main-padding-box);
+  }
+
   &__content {
     display: flex;
     gap: 30px;
@@ -16,10 +20,18 @@
     @media (max-width: 1200px) {
       gap: 20px;
     }
+
+    @media (max-width: 768px) {
+      @include flex-column;
+    }
   }
 
   &__item {
     width: 53%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &-img {

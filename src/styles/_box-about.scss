@@ -5,5 +5,9 @@
 
   &__promo {
     padding-bottom: 2.125rem;
+
+    @media (max-width: 768px) {
+      padding-bottom: 0;
+    }
   }
 }
