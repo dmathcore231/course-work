@@ -28,6 +28,7 @@ $component: 'btn';
   padding: var(--btn-padding);
 
   &:hover {
+    transition-duration: 280ms;
     color: var(--btn-color-hover);
     background-color: var(--btn-bg-color-hover);
     border-color: var(--btn-border-color-hover);
@@ -68,6 +69,7 @@ $component: 'btn';
   }
 
   &_subscribe {
+    transition-duration: 280ms;
     --btn-color: var(--light-color);
     --btn-bg-color: var(--success-color);
     --btn-border-color: var(--success-color);
