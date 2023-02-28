@@ -3,11 +3,10 @@
   border: 1px solid var(--gray-300);
 
   @media (max-width: 768px) {
-    @media (max-width: 768px) {
-      text-align: left;
-      padding: 8px 0 8px 20px;
-    }
+    text-align: left;
+    padding: 8px 0 8px 20px;
   }
+
   &::placeholder {
     color: var(--gray-300);
     font-size: 18px;
