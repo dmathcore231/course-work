@@ -1,6 +1,13 @@
 .input {
   display: inline-flex;
   border: 1px solid var(--gray-300);
+
+  @media (max-width: 768px) {
+    @media (max-width: 768px) {
+      text-align: left;
+      padding: 8px 0 8px 20px;
+    }
+  }
   &::placeholder {
     color: var(--gray-300);
     font-size: 18px;
@@ -23,5 +30,9 @@
     border-left: 1px solid var(--gray-300);
     border-top: 1px solid var(--gray-300);
     width: 100%;
+
+    @media (max-width: 768px) {
+      border: 1px solid var(--gray-300);
+    }
   }
 }

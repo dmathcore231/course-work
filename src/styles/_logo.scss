@@ -25,5 +25,9 @@
       max-width: 182px;
       max-height: 67px;
     }
+
+    @media (max-width: 768px) {
+      @include img-contain;
+    }
   }
 }

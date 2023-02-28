@@ -28,6 +28,10 @@
 
   &__logo {
     display: flex;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
 
   &__posttitle {
@@ -44,6 +48,10 @@
 
     @media (max-width: 1200px) {
       padding: 5px;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: center;
     }
   }
 
@@ -116,6 +124,11 @@
 
     @media (max-width: 1200px) {
       padding-top: 24px;
+    }
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: 24px;
     }
   }
 }

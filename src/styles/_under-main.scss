@@ -9,5 +9,15 @@
     @media (max-width: 1200px) {
       gap: 20px;
     }
+
+    @media (max-width: 992px) {
+      gap: 10px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content;
+      justify-items: center;
+    }
   }
 }

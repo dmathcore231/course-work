@@ -135,6 +135,18 @@
         top: 194px;
         left: 99px;
       }
+
+      @media (max-width: 350px) {
+        left: 83px;
+      }
+
+      @media (max-width: 320px) {
+        left: 65px;
+      }
+
+      @media (max-width: 300px) {
+        left: 55px;
+      }
     }
   }
 

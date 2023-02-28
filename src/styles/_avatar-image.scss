@@ -13,4 +13,11 @@
   &__item {
     @include img-contain;
   }
+
+  &_size_l {
+    @media (max-width: 1200px) {
+      max-height: 115px;
+      max-width: 115px;
+    }
+  }
 }

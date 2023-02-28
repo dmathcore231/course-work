@@ -3,6 +3,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @media (max-width: 768px) {
+    justify-content: center;
+    gap: 25px;
+  }
+
   &__card {
     width: calc(33% - 16px);
     @include flex-column;
@@ -11,6 +16,19 @@
 
     @media (max-width: 1200px) {
       width: calc(33% - 7px);
+    }
+
+    @media (max-width: 768px) {
+      width: 55%;
+    }
+
+
+    @media (max-width: 576px) {
+      width: 70%;
+    }
+
+    @media (max-width: 400px) {
+      width: 100%;
     }
   }
 
@@ -26,6 +44,10 @@
 
     @media (max-width: 1200px) {
       gap: 28px;
+    }
+
+    @media (max-width: 768px) {
+      gap: 23px;
     }
 
     &:hover {
@@ -89,6 +111,10 @@
 
     @media (max-width: 810px) {
       right: 76%;
+    }
+
+    @media (max-width: 400px) {
+      padding: 11px 20px;
     }
 
     &-number {

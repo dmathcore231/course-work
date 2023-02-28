@@ -26,6 +26,10 @@
     @media (max-width: 1200px) {
       gap: 13px;
     }
+
+    @media (max-width: 768px) {
+      gap: 35px;
+    }
   }
 
   &__icon {
@@ -39,6 +43,10 @@
   &__link {
     &:hover {
       transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      padding-bottom: 20px;
     }
   }
 }
