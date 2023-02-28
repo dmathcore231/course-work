@@ -1,6 +1,5 @@
 .box-what-we-do {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   gap: 80px;
   padding: 41px 0 114px 0;
 

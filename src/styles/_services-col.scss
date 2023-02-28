@@ -1,4 +1,4 @@
-.box-services-col {
+.services-col {
   display: flex;
   width: calc(33% - 20px);
   gap: 26px;
@@ -9,6 +9,12 @@
     gap: 19px;
   }
 
+  &__icon {
+    @media (max-width: 1200px) {
+      max-height: 59px;
+      max-width: 59px;
+    }
+  }
 
   &__text {
     padding-top: 20px;
@@ -18,13 +24,6 @@
 
     @media (max-width: 768px) {
       gap: 16px;
-    }
-  }
-
-  &__icon {
-    @media (max-width: 1200px) {
-      max-height: 59px;
-      max-width: 59px;
     }
   }
 }

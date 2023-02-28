@@ -9,17 +9,30 @@
     content: '';
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    @include absolute-zero;
     background: rgba(255, 255, 255, 0.8);
   }
 
+  //up content
   &__content {
     position: relative;
     z-index: 2;
+  }
+
+  &__tablet {
+    padding-top: 59px;
+
+    @media (max-width: 1200px) {
+      padding-top: 39px;
+    }
+
+    &-img {
+      @media (max-width: 1200px) {
+        max-width: 446px;
+        max-height: 335px;
+        @include img-contain;
+      }
+    }
   }
 
   &__phone {
@@ -40,23 +53,7 @@
       }
 
       @media (max-width: 576px) {
-       max-width: 100px;
-      }
-    }
-  }
-
-  &__tablet {
-    padding-top: 59px;
-
-    @media (max-width: 1200px) {
-      padding-top: 39px;
-    }
-
-    &-img {
-      @media (max-width: 1200px) {
-        max-width: 446px;
-        max-height: 335px;
-        @include img-contain;
+        max-width: 100px;
       }
     }
   }

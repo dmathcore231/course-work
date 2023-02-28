@@ -26,14 +26,32 @@
     }
   }
 
-  &__icon {
-    &-team {
-      @media (max-width: 1200px) {
-        max-width: 31px;
-        max-height: 29px;
-      }
+  &__link {
+    position: relative;
+    color: var(--danger-color);
+    background: #F9EFCF;
+    min-height: 42px;
+    min-width: 42px;
+    @include flex-center;
+
+    @media (max-width: 1200px) {
+      min-height: 35px;
+      min-width: 35px;
     }
 
+    @media (max-width: 768px) {
+      min-height: 42px;
+      min-width: 42px;
+    }
+
+    &:hover {
+      color: var(--light-color);
+      background: var(--danger-color);
+    }
+  }
+
+  &__image {
+    @include img-cover;
   }
 
   &__title {
@@ -157,8 +175,15 @@
     z-index: 1;
   }
 
-  &__image {
-    @include img-cover;
+// icon for team gallery
+  &__icon {
+    &-team {
+      @media (max-width: 1200px) {
+        max-width: 31px;
+        max-height: 29px;
+      }
+    }
+
   }
 
   &__item:hover .gallery__title-bg {
@@ -169,30 +194,6 @@
     @media (max-width: 768px) {
       display: none;
     }
-  }
-
-  &__link {
-    position: relative;
-    color: var(--danger-color);
-    background: #F9EFCF;
-    min-height: 42px;
-    min-width: 42px;
-    @include flex-center;
-
-    @media (max-width: 1200px) {
-      min-height: 35px;
-      min-width: 35px;
-    }
-
-    @media (max-width: 768px) {
-      min-height: 42px;
-      min-width: 42px;
-    }
-  }
-
-  &__link:hover {
-    color: var(--light-color);
-    background: var(--danger-color);
   }
 
   &__employee-names {
@@ -206,6 +207,7 @@
     }
   }
 
+  //Wrapper for team galleries
   &__wrapper {
     all: inherit;
   }

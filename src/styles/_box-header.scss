@@ -1,16 +1,4 @@
 .box-header {
-  &__btn {
-    padding: 74px 0 78px 0;
-
-    @media (max-width: 1200px) {
-      padding: 50px 0 73px;
-    }
-
-    @media (max-width: 768px) {
-      padding: 50px 0 50px 0;
-    }
-  }
-
   &__promo {
     position: relative;
     z-index: 2;
@@ -39,6 +27,18 @@
 
     @media (max-width: 768px) {
       padding-bottom: 10px;
+    }
+  }
+
+  &__btn {
+    padding: 74px 0 78px 0;
+
+    @media (max-width: 1200px) {
+      padding: 50px 0 73px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 50px 0 50px 0;
     }
   }
 }

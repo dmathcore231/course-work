@@ -12,13 +12,4 @@
       padding-top: 83px;
     }
   }
-
-  &__text {
-    @include flex-column;
-    gap: 30px;
-
-    @media (max-width: 1200px) {
-      gap: 16px;
-    }
-  }
 }

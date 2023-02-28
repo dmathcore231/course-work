@@ -17,6 +17,7 @@
     @include flex-center;
     width: calc(16% - 80px);
 
+    //grid class
     &_first {
       grid-area: item1;
     }

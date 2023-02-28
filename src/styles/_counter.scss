@@ -32,6 +32,15 @@
       padding: 18px 10px;
     }
 
+    &_left_border {
+      border-left: 1px solid var(--light-color);
+
+      @media (max-width: 768px) {
+        border-left: none;
+      }
+    }
+
+    //grid class
     &_first {
       grid-area: item1;
     }
@@ -67,14 +76,6 @@
     @media (max-width: 1200px) {
       font-size: 48px;
       line-height: 56px;
-    }
-  }
-
-  &__item_left_border {
-    border-left: 1px solid var(--light-color);
-
-    @media (max-width: 768px) {
-      border-left: none;
     }
   }
 }
